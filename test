@@ -16,3 +16,10 @@ gouzigouzigouzigouzigouzixiaogouzi
 
 不是胖是朕:
 
+
+ilder.setResult(true).setMessage("catalog success");
+            regRspBuilder.setResponse(resBuilder);
+            basebuilder.setRegisterRsp(regRspBuilder).setPDGHeader(pdgBuilder);
+            // System.out.println(catalog.toString());
+            ctx.writeAndFlush(basebuilder.build());
+        } else if (type == MessageProtobuf.CommandType.HEARTBEAT) {
